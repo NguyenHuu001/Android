@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartListAcitity">
+   <include layout="@layout/toolbar"/>
+
+
+
+
+   <ListView
+       android:id="@+id/listCart"
+       android:layout_width="match_parent"
+       android:layout_height="514dp"
+       android:layout_marginStart="8dp"
+       android:layout_marginTop="60dp"
+       android:layout_marginEnd="8dp"
+       android:layout_marginBottom="8dp" />
+
+
+
+   <RelativeLayout
+
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:padding="25dp"
+       android:layout_alignParentBottom="true"
+      >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="4"
+          android:text="Tổng thanh toán"
+          android:fontFamily="@font/medium"
+          android:id="@+id/tvTongCong"
+         />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="150dp"
+          android:text="132.534"
+          android:textSize="18sp"
+          android:id="@+id/txt_final_price"
+          android:textColor="#FF4500"
+         />
+
+
+      <Spinner
+          android:id="@+id/cbPhuongThuc"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:entries="@array/payment_options"
+          android:layout_below="@id/tvTongCong"
+          android:layout_marginTop="10dp"
+
+          />
+      <Button
+          android:id="@+id/btn_order"
+          android:layout_width="138dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="250dp"
+
+          android:layout_marginTop="15dp"
+          android:layout_marginBottom="8dp"
+          android:fontFamily="@font/semibold"
+          android:text="Mua hàng" />
+
+   </RelativeLayout>
+
+</RelativeLayout>

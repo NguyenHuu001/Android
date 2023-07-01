@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".infoItem">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/toolbar"/>
+
+        <ImageView
+
+            android:id="@+id/imgInfoItem"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_marginStart="10dp"
+
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/anhcuoi1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTenSpInfoItem"
+            android:text="Tên sản phẩm"
+            android:fontFamily="@font/extrabold"
+            android:textSize="20dp"
+            android:layout_below="@+id/imgInfoItem"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giá sản phẩm"
+            android:layout_below="@+id/tvTenSpInfoItem"
+            android:textSize="30dp"
+            android:fontFamily="@font/extrabold"
+            android:id="@+id/tvGiaInfoItem"
+            android:textColor="#A52A2A"
+
+            />
+        <RatingBar
+            android:id="@+id/danhgiaCT"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/tvGiaInfoItem"
+            android:progressTint="#FFA500"
+
+            android:rating="5" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="100 đã bán"
+            android:fontFamily="@font/regular"
+            android:layout_toRightOf="@+id/tvGiaInfoItem"
+            android:layout_below="@+id/tvTenSpInfoItem"
+            android:layout_marginLeft="-90dp"
+            android:paddingTop="20dp"
+            android:id="@+id/tvSoLuongInfoItem"
+            />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/danhgiaCT"
+                android:id="@+id/tvContent"
+                android:text="❄️mã này hàng lên bao nhiêu vẫn không đủ cấp í
+                ❄️Năm nay xưởng vẫn lên mẫu phục vụ mọi người nhé.
+                ❄️Diện team, mặc đôi ưng xỉu đó ạ
+                ❄️Freesize: Phom 38-65kg mặc đẹp nha!
+
+                  ❄️❄️ Xưởng May BonBon – Chuyên sỉ lẻ các thời trang mới nhất
+                ️🏅Giá gốc tận xưởng không qua trung gian.
+    ️           🏅Cập nhập mẫu HOT mới liên tục .
+    ️           🏅Luôn tuyển sỉ CTV toàn quốc, sỉ số lượng lớn giá siêu siêu tốt .
+    ️           🏅Sản phẩm luôn kèm ảnh tự chụp và Video tự quay .
+                📞 Add Z.a.l.o 0969136623 để cập nhập giá SỈ mới nhất
+                🏚 : Yên định , Thanh Hoá
+                🌈 : Lựa chọn Xưởng MayBonBon để có một trải nghiệm mua hàng như ý các bạn nhé 😍😍
+                🛑 LƯU Ý:
+                💖 Quý Khách vui lòng đọc kỹ Thông Tin Sản Phẩm trước khi đặt hàng, tránh đặt rồi hủy hàng nhé, hoặc có hủy thì hủy sớm trước khi đơn hàng đưa vận chuyển nhé. Vì sau khi đặt hàng, hàng sẽ được Shop gói và gửi đi liền trong ngày hoặc ngày hôm sau. Vì thế việc hủy hàng sẽ gây nhiều khó khăn cho Shop. Rất mong Quý Khách cảm thông và đắn đo giúp Shop!!!
+                : 💖 Theo quy định của Shopee Khách hàng sẽ KHÔNG ĐƯỢC XEM HÀNG trước khi thanh toán nhưng được đổi trả sau 24h nếu sản phẩm bị lỗi tính từ thời điểm nhận được hàng. Hãy chắc chắn nhận hàng và để thông tin chính xác khi ấn Mua hàng tránh trường hợp giao đi rồi lại quay về.
+                💖 Hướng dẫn đặt hàng nhiều sản phẩm một đơn : KH chọn màu + size - thêm vào giỏ hàng- chọn tiếp sản phẩm khác thêm vào giỏ, bước cuối KH mua đơn sẽ được đơn nhiều sản phẩm
+                #ao #aophong #aophongnu #aophongloang #aobosua #aophongbosua #aothun #aothunnu #aothunloang #aorong #aothunrong #aotrummong #freeship #aothunnu #aophongnu #aophongnuformrong #aophongnudeper #aothunnuformrong #aothunnutayngan #aothunnutaydai #aothunnucoco #aothunnupolo #aothunnuom #aothunnucotim #aothunnucovuong #aophongnugiare #aophong #aophongnam  #aophongcottonchanel  #aophongcotton #aothunnamtenji"
+                android:scrollbars="vertical"
+                android:fontFamily="@font/opsbolditalic"
+                />
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="580dp"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:background="#FFF0F5"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvSoLuongInfoItem"
+            android:id="@+id/btnMuaHangInfoItem"
+            android:text="Mua ngay"
+            android:fontFamily="@font/opsbolditalic"
+            android:layout_marginLeft="200dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+
+            />
+
+        <ImageButton
+            android:id="@+id/btnGioHang"
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+
+            android:layout_marginTop="-50dp"
+            android:background="@drawable/cart"
+            android:scaleType="fitXY"
+            android:src="@drawable/cart" />
+    </LinearLayout>
+</RelativeLayout>
+

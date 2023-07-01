@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Shopping</string>
+    <string-array name="payment_options">
+        <item>Tiền mặt</item>
+        <item>Thẻ tín dụng</item>
+    </string-array>
+    <string name="open">Mở thanh navigation</string>
+    <string name="close">Đóng thanh navigation</string>
+    <string name="my_map_api_key">AIzaSyBKEoNjZoKgKrM8j9SHWFKivHPdZwJxgPQ</string>
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/drawer_layout"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <include layout="@layout/toolbar"
+            android:id="@+id/qwe"/>
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:headerLayout="@layout/header"
+            app:menu="@menu/main_menu"
+            android:id="@+id/nav_view"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"/>
+
+
+        <ScrollView
+            android:id="@+id/scr"
+            android:layout_below="@id/qwe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="InvalidId">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_margin="10dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <com.denzcoskun.imageslider.ImageSlider
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            app:iss_period="1000"
+                            app:iss_auto_cycle="true"
+                            app:iss_corner_radius="10"
+                            app:iss_delay="1000"
+                            app:iss_title_background="@drawable/default_gradient"
+                            android:id="@+id/ImageSlider"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_search_24"
+            android:background="@drawable/baseline_search_24"
+            android:id="@+id/btnSearch"
+            android:layout_toRightOf="@id/txtTimKiem"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="-95dp"
+            tools:ignore="NotSibling"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTimKiem"
+            android:hint="Tìm mọi thứ"
+            android:fontFamily="@font/lighitlic"
+            android:layout_marginRight="80dp"
+            android:layout_marginLeft="140dp"
+            android:textColor="#E0FFFF"
+            android:textColorHint="#E0FFFF"
+            android:layout_marginTop="10dp"
+
+            />
+
+        <GridView
+            android:id="@+id/gridViewSp"
+            android:layout_below="@id/scr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:horizontalSpacing="6dp"
+            android:numColumns="2"
+            android:verticalSpacing="6dp"/>
+
+    </RelativeLayout>
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

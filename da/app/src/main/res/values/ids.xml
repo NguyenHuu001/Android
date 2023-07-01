@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="txt_sdt" type="id" />
+    <item name="re_sdt" type="id" />
+    <item name="thongtin" type="id" />
+    <item name="txt_nhapThongTin" type="id" />
+    <item name="txt_ttlh" type="id" />
+    <item name="view_ngang1" type="id" />
+    <item name="txt_thongtindiachi" type="id" />
+    <item name="cbb_quoctich" type="id" />
+</resources>

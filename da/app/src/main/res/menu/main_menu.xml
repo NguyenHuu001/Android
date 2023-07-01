@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/home"
+            android:icon="@drawable/baseline_home_24"
+            android:title="Trang chủ"/>
+        <item android:id="@+id/dangxuat"
+            android:icon="@drawable/baseline_exit_to_app_24"
+            android:title="Đăng xuất"/>
+
+
+    </group>
+    <item android:title="Tài khoản">
+        <menu>
+            <group
+                android:checkableBehavior="single"
+                >
+                <item android:id="@+id/thongtin"
+                    android:icon="@drawable/baseline_info_24"
+                    android:title="Thông tin tài khoản"/>
+                <item android:id="@+id/doimatkhau"
+                    android:icon="@drawable/baseline_password_24"
+                    android:title="Đổi mật khẩu"/>
+                <item android:id="@+id/lsMuaHang"
+                    android:icon="@drawable/baseline_history_24"
+                    android:title="Lịch sử mua hàng"/>
+            </group>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiaChi">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/img"
+            android:background="@color/white"
+            android:scaleType="fitCenter"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ vận chuyển"
+            android:textSize="30dp"
+            android:layout_marginLeft="100dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/txt_ttlh"
+            android:layout_below="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thông tin liên hệ"
+            android:textSize="50px"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/txt_nhapThongTin"
+            android:layout_below="@+id/txt_ttlh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập tên"
+            android:textColorHint="@color/xam"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textSize="50px"/>
+        <Spinner
+
+            android:id="@+id/my_spinner"
+            android:layout_below="@id/txt_nhapThongTin"
+            android:layout_width="130dp"
+            android:layout_height="100px"
+            android:layout_marginTop="20dp"
+            />
+
+        <EditText
+            android:id="@+id/txt_sdt"
+            android:layout_below="@id/txt_nhapThongTin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/my_spinner"
+            android:hint="Nhập số điện thoại hợp lệ"
+            android:text=""
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/xam"
+            android:textSize="50px"/>
+
+        <TextView
+            android:id="@+id/txt_thongtindiachi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_sdt"
+            android:text="Thông tin địa chỉ"
+            android:textSize="50px"
+            android:layout_marginTop="40dp"
+            />
+
+        <Spinner
+            android:id="@+id/cbb_quoctich"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/txt_thongtindiachi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarSize="50px"
+            />
+        <View
+            android:id="@+id/view_ngang1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/cbb_quoctich"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/darker_gray"
+            />
+
+        <Spinner
+            android:id="@+id/cbb_khuvuc"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/view_ngang1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+        <View
+            android:id="@+id/view_ngang2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/cbb_khuvuc"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/darker_gray"
+            />
+
+        <EditText
+            android:id="@+id/edittxt_diachi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_ngang2"
+            android:hint="Nhập thông tin địa chỉ"
+            android:textColorHint="@color/xam"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="-1dp"
+            android:textSize="50px"
+            />
+
+
+        <View
+            android:id="@+id/view_ngang3"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_below="@+id/edittxt_diachi"
+            android:layout_marginTop="10dp"
+            android:background="@color/xam"
+            android:layout_marginLeft="-20dp"
+            />
+        <TextView
+            android:id="@+id/cd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_ngang3"
+            android:layout_marginTop="15dp"
+            android:text="Cài đặt"
+            android:textSize="50px"
+            />
+        <TextView
+            android:id="@+id/macdinh"
+            android:layout_below="@id/view_ngang3"
+            android:layout_marginTop="60dp"
+            android:text="Đặt làm mặc định"
+            android:textSize="60px"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_ngang3"
+            android:layout_marginTop="60dp"
+            android:layout_toRightOf="@+id/macdinh"
+            android:layout_marginLeft="170dp"/>
+        <Button
+            android:id="@+id/btn_luu"
+            android:layout_below="@+id/macdinh"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:text="Lưu"
+            android:layout_marginLeft="50dp"
+            android:textSize="50px"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/red"/>
+
+    </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
